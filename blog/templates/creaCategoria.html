@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block title%} Crea Categoria {% endblock%}
+
+# apartado 6
+
+{% load crispy_forms_tags %}
+# tengo que añadir este paquete a settings del proyecto.
+
+{% block contenido %}
+    <form method="POST" action="" class="mt-2" autocomplete="off" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form|crispy }}
+        #añadimos un filtro con una tuberia pipeline  
+        <button type="submit" class="btn btn-success"> Guardar </button>
+    </form>
+{% endblock %}

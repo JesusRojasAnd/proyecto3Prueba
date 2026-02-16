@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block title%} Blog {% endblock%}
+
+{% block contenido %}
+<p>Listado de las Categorias</p>
+    {% for ent in categorias %}
+        {{ent}}
+        </br>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,36 @@
+
+
+  html {
+    position: relative;
+    min-height: 100%;
+  }
+  
+  body {
+    background: linear-gradient(#ffffff, #979797);
+   
+  }
+  
+  main {
+    position: relative;
+    z-index: 1; /* Asegurarse de que el main se muestra sobre el footer */
+  }
+  
+  footer {
+    position: absolute;
+    bottom: -100;
+    width: 100%;
+    height: auto; /* Altura del footer */
+    background-color: #343a40;
+    color: #fff;
+    margin-bottom: -230px;
+  }
+
+  letra{
+    color: aliceblue;
+  }
+  
+  @media (max-width: 800px) {
+    main {
+      display: none;
+    }
+  }
