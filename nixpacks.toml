@@ -1,0 +1,10 @@
+[phases.setup]
+nixPkgs = ['python311']
+aptPkgs = ['libjpeg-dev', 'zlib1g-dev', 'libtiff-dev', 'libfreetype6-dev', 'liblcms2-dev', 'libwebp-dev', 'tcl-dev', 'libopenjp2-7-dev']
+
+[phases.install]
+cmds = ['pip install -r requirements.txt']
+
+[start]
+cmd = 'python manage.py migrate && gunicorn proyecto3.wsgi:application'
+
