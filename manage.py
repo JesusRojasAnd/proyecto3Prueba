@@ -3,6 +3,9 @@
 import os
 import sys
 
+# Configurar PyMySQL como reemplazo de MySQLdb
+import pymysql
+pymysql.install_as_MySQLdb()
 
 def main():
     """Run administrative tasks."""
